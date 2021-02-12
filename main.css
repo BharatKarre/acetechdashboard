@@ -92,7 +92,7 @@ body{
     border: none;
 }
 .dropdown-menu .dropdown-item{
-    background-color: orange;
+    background: linear-gradient(45deg, #f045ff, #9b00e8);
 }
 .btn-group{
     color: white;
@@ -100,7 +100,7 @@ body{
 .navbar-toggler i{
     color: white;
 }
-.container p{
+.container-fluid p{
     color: black;
     font-size: 20px;
     font-weight: bold;
