@@ -5,18 +5,150 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --primary-clr:orange;
+}
+
 body{
     background-color: #efefef;
 }
 
-
-
-
 .container{
     min-height: 100vh;
     width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow: hidden;
 }
 
-.path{
-    font-weight: bold;
+.container .img{
+    position: relative;
+    width: 50%;
+    box-shadow: -15px 0 35px rgba(0, 0, 0, 0.2),
+    0 -15px 35px rgba(0, 0, 0, 0.2),
+    0 -15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.share{
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-clr);
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+.share:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+.share i{
+    line-height: 50px;
+}
+
+.container .info{
+    width: 50%;
+    background-color: white;
+    z-index: 1;
+    padding: 35px 40px;
+    box-shadow: 15px 0 35px rgba(0, 0, 0, 0.2),
+    0 -15px 35px rgba(0, 0, 0, 0.2),
+    0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.prodname{
+    padding: 0 0 10px 0;
+}
+
+.prodname div .big{
+    margin-right: 10px;
+    font-size: 2rem;
+    color: black;
+    line-height: 1;
+}
+
+.prodname div .new{
+    background-color: var(--primary-clr);
+    text-transform: uppercase;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.prodname .small{
+    font-weight: 500;
+    color: #444;
+    margin-top: 3px;
+    text-transform: capitalize;
+}
+
+.prodname, .description, .ratings-container, .delivery{
+    border-bottom: 1px solid #dadada;
+}
+
+.description , .ratings-container, .delivery, .buy-price{
+    padding: 10px 0;
+}
+
+.title{
+    color: #3e3a3a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.text{
+    color: #555;
+    font-size: 17px;
+}
+
+.buy-price{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+}
+
+.price h1{
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.price i{
+    font-size: 1.4rem;
+    margin-right: 1px;
+}
+
+.buy{
+    padding: .7rem 1rem;
+    background-color: var(--primary-clr);
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-style: 1.1rem;
+    transition: .5s;
+}
+
+.buy:hover{
+    transform: scale(1.1);
+    text-decoration: none;
+    color: #fff;
 }
