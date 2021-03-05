@@ -15,7 +15,7 @@ body{
 
 .container{
     min-height: 100vh;
-    width: max-content;
+    width: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,9 +23,12 @@ body{
     overflow: hidden;
 }
 
-.container .img{
+.container .image{
     position: relative;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
     box-shadow: -15px 0 35px rgba(0, 0, 0, 0.2),
     0 -15px 35px rgba(0, 0, 0, 0.2),
     0 -15px 35px rgba(0, 0, 0, 0.2);
