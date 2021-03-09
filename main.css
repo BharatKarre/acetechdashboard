@@ -97,6 +97,10 @@ body{
 .btn-group{
     color: white;
 }
+.btn-group:hover{
+    color: white;
+    text-decoration: none;
+}
 .navbar-toggler i{
     color: white;
 }

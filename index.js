@@ -23,9 +23,8 @@ showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
 
 // function colorLink(){
 //     if(linkColor){
-//         linkColor.forEach(L => l.classList.remove('active'))
+//         linkColor.forEach(l=> l.classList.remove('active'))
 //         this.classList.add('active')
 //     }
 // }
-
-// linkColor.forEach(L=> l.addEventListener('click', colorLink))
+// linkColor.forEach(l=> l.addEventListener('click', colorLink))
