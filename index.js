@@ -28,3 +28,10 @@ showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
 //     }
 // }
 // linkColor.forEach(l=> l.addEventListener('click', colorLink))
+
+
+let btnback = document.querySelector('.back');
+
+btnback.addEventListener('click', () => {
+    window.history.back();
+});

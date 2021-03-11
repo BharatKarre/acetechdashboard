@@ -233,7 +233,9 @@ body{
     transition-duration:0.3s;
     transition-property: box-shaadow;
 }
-.glow:hover, glow:focus, glow:active{
+.glow:hover, 
+.glow:focus, 
+.glow:active{
     box-shadow: 1px 1px 8px black;
 }
 .btn-prod{

@@ -151,6 +151,54 @@ a{
 } */
 
 /* Start with giving 5rem top padding */
+.back{
+    margin-top: 4rem;
+    font-weight: bold;
+}
+.back a{
+    color: var(--first-color);
+}
+.back a:hover{
+    text-decoration: none;
+    color: var(--first-color);
+}
+.back i{
+    color: var(--first-color);
+}
+.logs .img{
+    display: block;
+    border-radius: 20px;
+    height: 40vh;
+    width: 40vh;
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 0;
+    opacity: 1;
+}
+
+.logs .img .icons .icon-block a{
+    margin: 0 2px;
+    height: 40vh;
+    width: 40vh;
+    color: white;
+    font-weight: bold;
+}
+.logs .img .icons{
+    border-radius: 20px;
+    height: 40vh;
+    width: 40vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.logs .img .icons .icon-block a i{
+    color: white;
+}
+
+.logs .img .icons .icon-block a:hover{
+    text-decoration: none;
+    font-size: 18px;
+}
 
 @media screen and (min-width: 786px){
     body{
