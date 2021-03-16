@@ -15,41 +15,43 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.toggle-btn{
+
+.slider{
     position: relative;
-    display: inline-block;
     width: 60px;
     height: 30px;
     margin-bottom: 22px;
     margin-right: 20px;
     border-radius: 34px;
-    background: gray;
+    -webkit-appearance: none;
+    background: lightgray;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    /* transition: 0.5s; */
 }
 
-.toggle-btn > .slider{
-    position: absolute;
-    cursor: pointer;
-    height: 23px;
-    width: 23px;
-    top: 3px;
-    left: 4px;
-    right: 0;
-    bottom: 4px;
-    background: white;
-    transition: .4s;
-    border-radius: 34px;
-}
-
-.toggle-btn:active{
+.slider:checked{
     background: #ff278c;
 }
-.toggle-btn > .slider:active{
-    transform: translateX(30px);
+
+.slider:before{
+    content: '';
+    position: absolute;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background: white;
+    transform: scale(1.1);
+    box-sizing: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+    border: 1px solid lightgray;
 }
 
-/* .toggle-btn{
-    width: 60px;
-    height: 30px;
-    background: gray;
-    border-radius: 30px;
-} */
+input:checked[type="checkbox"]:before{ 
+    left: 30px;
+}

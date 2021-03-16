@@ -172,7 +172,7 @@
                             </div>
                             <hr>
                             <div class="div__body">
-                                <div class="col-md-12 mb-5">
+                                <div class="col-md-12 mt-4 mb-5">
                                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
@@ -198,17 +198,20 @@
                                 <div class="col-md-12 mb-3 status">
                                     <p class="pl-4">Status Available</p>
                                     <div class="toggle-btn">
-                                        <div class="slider"></div>
+                                        <input type="checkbox" class="slider">
                                     </div>
                                 </div>
                                 <hr>
                                 <div class="col-md-12 pt-3 status">
                                     <p class="pl-4">Discount Active</p>
                                     <div class="toggle-btn">
-                                        <div class="slider"></div>
+                                        <input type="checkbox" class="slider">
                                     </div>
                                 </div>
                                 <hr>
+                                <div class="col-md-12 mb-3 d-flex justify-content-center align-items-center">
+                                    <button type="button" class="btn btn-block">Save And Add</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -218,7 +221,7 @@
         
         <!--===== MAIN JS =====-->
         <script src="index.js"></script>
-        <script>0
+        <script>
             // Add the following code if you want the name of the file appear on select
             $(".custom-file-input").on("change", function() {
               var fileName = $(this).val().split("\\").pop();
