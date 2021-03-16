@@ -1,0 +1,55 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: "Poppins", sans-serif;
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle-btn{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-bottom: 22px;
+    margin-right: 20px;
+    border-radius: 34px;
+    background: gray;
+}
+
+.toggle-btn > .slider{
+    position: absolute;
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    top: 3px;
+    left: 4px;
+    right: 0;
+    bottom: 4px;
+    background: white;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggle-btn:active{
+    background: #ff278c;
+}
+.toggle-btn > .slider:active{
+    transform: translateX(30px);
+}
+
+/* .toggle-btn{
+    width: 60px;
+    height: 30px;
+    background: gray;
+    border-radius: 30px;
+} */
