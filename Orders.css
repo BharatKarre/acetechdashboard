@@ -1,0 +1,29 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.div__header > h6{
+    font-weight: bold;
+}
+.div__body > .attribute{
+    background: #ff278c;
+    color: white;
+    font-weight: 600;
+}
+
+.records > .status > span{
+    background-color: tomato;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
